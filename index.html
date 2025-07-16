@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpiritFlow</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body { background: linear-gradient(135deg, #89f7fe, #66a6ff); font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; color: #fff; text-align: center; }
+        h1 { font-size: 2em; margin-bottom: 20px; }
+        button { background: rgba(255,255,255,0.2); border: 2px solid #fff; border-radius: 12px; padding: 15px 25px; margin: 10px; font-size: 1em; color: #fff; cursor: pointer; transition: background 0.3s, transform 0.2s; }
+        button:hover { background: rgba(255,255,255,0.4); transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <h1>SpiritFlow 🌊</h1>
+    <button onclick="showAffirmation()">✨ Get Daily Affirmation</button>
+    <button onclick="startQuiz()">🧘‍♂️ Start Spiritual Quiz</button>
+    <button onclick="playMeditation()">🎧 Play Guided Meditation</button>
+    <button onclick="recordGratitude()">🙏 Record Today's Gratitude</button>
+    <script>
+        function showAffirmation() { alert('You are aligned, loved, and fully supported today.'); }
+        function startQuiz() { alert('Quiz feature coming soon! Reflect on your spiritual growth.'); }
+        function playMeditation() { alert('Breathe deeply. Feel the present moment. You are safe.'); }
+        function recordGratitude() { let gratitude = prompt('What are you grateful for today?'); if(gratitude){ alert('Thank you for sharing: ' + gratitude); } else { alert('No gratitude recorded.'); } }
+    </script>
+</body>
+</html>
