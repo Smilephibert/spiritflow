@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpiritFlow</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>body{background:linear-gradient(135deg,#89f7fe,#66a6ff);font-family:sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;margin:0;color:#fff;text-align:center}h1{font-size:2em;margin-bottom:20px}button{background:rgba(255,255,255,.2);border:2px solid #fff;border-radius:12px;padding:15px 25px;margin:10px;font-size:1em;color:#fff;cursor:pointer;transition:background .3s,transform .2s}button:hover{background:rgba(255,255,255,.4);transform:scale(1.05)}</style>
+</head>
+<body>
+<h1>SpiritFlow 🌊</h1>
+<button onclick="showAffirmation()">✨ Get Daily Affirmation</button>
+<button onclick="startQuiz()">🧘‍♂️ Start Spiritual Quiz</button>
+<button onclick="playMeditation()">🎧 Play Guided Meditation</button>
+<button onclick="recordGratitude()">🙏 Record Today's Gratitude</button>
+<script>
+const affirmations = [
+"I am connected to divine wisdom in all I do.",
+"I am enough, and I attract peace into my life.",
+"God’s light guides my path and my decisions.",
+"I am grateful for every moment of growth.",
+"I am aligned with love, abundance, and joy."
+];
+function showAffirmation(){
+let affirmation = affirmations[Math.floor(Math.random()*affirmations.length)];
+alert(affirmation);
+}
+function startQuiz(){
+const questions = [
+"What does spiritual alignment mean to you?",
+"How do you handle moments of fear spiritually?",
+"What is one daily habit you commit to for spiritual growth?",
+"Do you take quiet time each day to align your spirit?",
+"What does living in God’s light mean for your actions?"
+];
+let question = questions[Math.floor(Math.random()*questions.length)];
+alert(question);
+}
+function playMeditation(){
+alert(`Sit comfortably and close your eyes.\nTake a deep breath in, and slowly release.\nFeel the divine light within your heart.\nLet go of all tension and fear.\nYou are safe, you are loved, you are guided.\nBreathe deeply, and rest in this presence.`);
+}
+function recordGratitude(){
+let gratitude = prompt("What are you grateful for today?");
+if(gratitude){alert("Thank you for sharing: "+gratitude);}else{alert("No gratitude recorded.");}
+}
+</script>
+</body>
+</html>
