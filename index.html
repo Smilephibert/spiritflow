@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpiritFlow</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <!-- Plausible Tracking Script -->
-    <script defer data-domain="spiritflow.vercel.app" src="https://plausible.io/js/script.js"></script>
+    <!-- Advanced Plausible Tracking Script -->
+    <script defer data-domain="spiritflow.vercel.app" src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"></script>
+    <script>
+    window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
+    </script>
     <style>
         body { background: linear-gradient(135deg, #89f7fe, #66a6ff); font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; color: #fff; text-align: center; }
         h1 { font-size: 2em; margin-bottom: 20px; }
@@ -44,7 +47,7 @@
             alert(question);
         }
         function playMeditation() {
-            alert(`Sit comfortably and close your eyes.\\nTake a deep breath in, and slowly release.\\nFeel the divine light within your heart.\\nLet go of all tension and fear.\\nYou are safe, you are loved, you are guided.\\nBreathe deeply, and rest in this presence.`);
+            alert(`Sit comfortably and close your eyes.\nTake a deep breath in, and slowly release.\nFeel the divine light within your heart.\nLet go of all tension and fear.\nYou are safe, you are loved, you are guided.\nBreathe deeply, and rest in this presence.`);
         }
         function recordGratitude() {
             let gratitude = prompt("What are you grateful for today?");
@@ -57,4 +60,3 @@
     </script>
 </body>
 </html>
-
